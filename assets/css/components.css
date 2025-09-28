@@ -1,0 +1,184 @@
+.headerFoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  margin-bottom: 15px;
+}
+
+.foto-perfil {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: rgb(3, 14, 25) 0px 25px 35px -10px;
+}
+
+.btn-imprimir {
+  background-color: var(--gold);
+  margin: 0 auto 30px auto;
+  display: block;
+  color: var(--grey05);
+  border: 1px solid var(--grey05) !important;
+  padding: 8px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  align-self: center; /* esta linha centraliza */
+}
+
+.btn-imprimir:hover {
+  background-color: var(--gold);
+}
+
+.btn-imprimir i {
+  font-size: 15px;
+}
+.modo-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 100%;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.modo-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--colorH1);
+}
+
+.modo-label {
+  position: relative;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.modo-icon svg {
+  top: -3px; /* ou -3px para subir mais */
+  vertical-align: bottom;
+}
+
+.social-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.icon-social {
+  font-size: 1.8rem;
+  color: var(--gold);
+  transition: color 0.3s ease;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centraliza horizontalmente */
+  flex-wrap: wrap;
+  gap: 10px; /* opcional: espaçamento entre logo e texto */
+  text-align: center;
+}
+
+.footer-logo {
+  height: 40px; /* Ajuste o tamanho conforme necessário */
+}
+.footer-text {
+  margin: 0; /* Remove margem padrão do parágrafo */
+  font-size: 11px;
+}
+
+.fade-footer {
+  background: linear-gradient(
+    to bottom,
+    var(--background),
+    var(--footerBackground)
+  );
+}
+
+.infoPessoal {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--background);
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.infoPessoal.shrink {
+  padding: 0.3rem 1rem;
+  font-size: 0.9rem;
+}
+
+.infoPessoal.shrink .modo-wrapper {
+  padding-right: 10px;
+}
+
+.infoPessoal.shrink .modo-toggle {
+  font-size: 1rem;
+  padding: 2px 6px;
+}
+
+.infoPessoal.shrink .modo-label {
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+
+.infoPessoal.shrink .modo-icon svg {
+  top: 0;
+  width: 16px;
+  height: 16px;
+  transition: all 0.3s ease;
+}
+
+.headerNome {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+  margin-top: 0;
+  padding-top: 8px;
+}
+
+.headerNome .nome-primeiro,
+.headerNome .nome-segundo {
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.frontend-title {
+  font-size: 1.4rem;
+  font-weight: var(--fontWeightMedium);
+  color: var(--gold);
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.headerContactos {
+  flex: 1;
+  padding-left: 20px;
+  border-left: 1px solid #ccc; /* o risco decorativo */
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}

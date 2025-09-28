@@ -1,0 +1,174 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--background);
+  color: var(--colorH1);
+  background: linear-gradient(
+    to bottom,
+    var(--background) 0%,
+    var(--footerBackground) 100%
+  );
+}
+h1,
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  color: var(--colorH1);
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: var(--gold);
+}
+
+h3 {
+  font-weight: var(--fontWeightRegular);
+  font-size: 1.1rem;
+  margin-top: 1px;
+}
+
+li {
+  color: var(--colorP);
+  font-weight: var(--fontWeightLight);
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.titulo {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--colorP);
+}
+
+.columnLeft .sobre_mim p {
+  margin-bottom: 15px;
+}
+
+.columnLeft .sobre_mim h2 {
+  margin-bottom: 15px;
+}
+
+.competencias p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.columnLeft p,
+h3 {
+  color: var(--grey05);
+}
+
+.cursos p {
+  margin-top: 15px;
+}
+
+.cursos h3 {
+  color: var(--grey05);
+  margin-bottom: 15px;
+}
+
+/* Garante que o texto de cada par tem a cor correta e sem margens internas */
+
+.detalhe-item p,
+.detalhe-item h3 {
+  margin: 0; /* Remove as margens padrão de P e H3 */
+  line-height: 1.4; /* Ajusta o espaçamento da linha */
+  color: var(--grey05); /* Mantém a cor clara no fundo azul-escuro */
+}
+.detalhes h2 {
+  margin-bottom: 15px;
+}
+
+.cartaconducao p,
+.cartaconducao h2 {
+  margin-bottom: 15px;
+}
+
+.columnRight p,
+.columnRight h3 {
+  color: var(--colorP);
+}
+
+.headerNome h1 {
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 2.8rem;
+}
+
+.headerContactos p {
+  display: flex;
+  margin: 6px 0;
+  font-size: 1.4rem;
+  text-align: left; /* garante alinhamento à esquerda */
+}
+
+.headerContactos p:nth-child(1),
+.headerContactos p:nth-child(2) {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+}
+
+.headerContactos i {
+  font-size: 16px;
+  margin-right: 6px;
+  position: relative;
+  top: 2px;
+  color: var(--gold);
+}
+
+.infoPessoal.shrink h1 {
+  font-size: 1.8rem;
+}
+
+.infoPessoal.shrink h2.frontend-title {
+  font-size: 1rem;
+}
+.infoPessoal.shrink .headerContactos p {
+  font-size: 12px;
+  margin: 4px 0;
+}
+
+.infoPessoal.shrink .headerContactos i {
+  font-size: 14px;
+  top: 1px;
+}
+
+.social-nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--colorP);
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.social-nav a:hover {
+  color: var(--gold);
+}
+.frases-lista li {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.footer {
+  background-color: var(--footerBackground);
+  color: var(--footerText);
+
+  border-top: 1px solid var(--grey03);
+}

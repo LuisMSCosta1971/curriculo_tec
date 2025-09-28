@@ -1,0 +1,45 @@
+:root {
+  --gold: #ce945f;
+  --blue01: #1d4561;
+  --grey01: #191919;
+  --grey02: #363636;
+  --grey03: #666666;
+  --grey04: #a7a7a7;
+  --grey05: #fff7f7;
+  --green01: #018c0f;
+  --green02: #d7ffe0;
+  --white: #fff;
+  --black: #191919;
+  --fontWeightLight: 300;
+  --fontWeightRegular: 400;
+  --fontWeightMedium: 500;
+  --fontWeightBold: 700;
+
+  --background: #f9f9f9; /* fundo do body */
+  --footerBackground: #333; /* fundo do footer */
+}
+
+html[data-theme="light"] {
+  --background: var(--white);
+  --footerBackground: var(--white);
+  --colorH1: var(--blue01);
+  --colorH2: var(--gold);
+  --colorH3: var(--grey03);
+  --colorH4: var(--blue01);
+  --colorP: var(--grey03);
+  --colorPrimaryMenu: var(--grey03);
+  --colorText: var(--blue01);
+}
+
+html[data-theme="dark"] {
+  --background: #2f2e2e;
+  --footerBackground: #222;
+  --colorH1: var(--grey05);
+  --colorH2: var(--gold);
+  --colorH3: var(--grey05);
+  --colorH4: var(--grey05);
+  --colorP: var(--grey05);
+  --colorPrimaryMenu: var(--grey04);
+  --colorText: var(--white);
+  --footerText: #ccc;
+}

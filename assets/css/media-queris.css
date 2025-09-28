@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px) {
+  .timeline {
+    padding: 0;
+  }
+  .foto-container {
+    max-width: 120px;
+  }
+  .modo-wrapper {
+    margin-top: 4px;
+  }
+  .modo-toggle {
+    padding: 2px;
+    font-size: 1.2rem;
+  }
+  .modo-label {
+    font-size: 1rem;
+  }
+  .timeline::before {
+    left: 10px;
+    height: 100%;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  .timeline-left,
+  .timeline-right {
+    width: 100%;
+  }
+
+  .circle {
+    left: 10px;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 600px) {
+  .footer-content {
+    justify-content: center;
+    flex-direction: column; /* Empilha os itens em telas pequenas */
+    text-align: center;
+    gap: 6px;
+  }
+
+  .footer-logo {
+    margin-bottom: 3px;
+  }
+}

@@ -1,0 +1,144 @@
+
+
+
+
+.container {
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  min-height: 100vh;
+}
+
+.experiencia,
+.social,
+.passatempos,
+.frasesfavoritas {
+  margin-top: 30px;
+}
+
+.columnLeft section {
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--grey05);
+  padding-bottom: 10px;
+  width: 100%;
+}
+.columnLeft section:last-child {
+  border-bottom: none; /*retira a linha da ultima linha*/
+  padding-bottom: 0;
+}
+
+.columnLeft button {
+  background-color: transparent;
+  border: none; /*bordo do botao*/
+  cursor: pointer; /*para ter uma mão a apontar*/
+  justify-content: center;
+  color: var(--grey05);
+}
+
+.columnLeft {
+  position: relative;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--blue01);
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.columnLeft .sobre_mim {
+  font-size: small;
+  line-height: 1.5;
+  margin-top: 1px;
+  font-weight: var(--fontWeightMedium);
+  font-size: 1.25rem;
+}
+
+.columnLeft .competencias {
+  line-height: 1.5;
+  font-weight: var(--fontWeightMedium);
+  font-size: 1.25rem;
+}
+
+/* Estilo para agrupar os detalhes e dar espaço vertical */
+.detalhe-item {
+  margin-bottom: 12px; /* Espaço entre cada par de detalhes (2 a 2) */
+}
+
+.coluna-esquerda,
+.coluna-direita {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 45%;
+}
+
+.columnRight {
+  width: 75%;
+  background-color: var(--background);
+  justify-content: flex-start;
+  padding: 20px;
+  margin-top: 0;
+}
+
+.columnRight section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.timeline {
+  position: relative;
+  top: 12px;
+}
+
+.timeline-left {
+  width: 35%;
+}
+
+.timeline-right {
+  width: 61%;
+}
+
+.timeline-item {
+  margin-top: 18px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  gap: 4%;
+}
+
+.circle {
+  position: absolute;
+  left: 35%;
+  transform: translateX(-41%);
+  width: 9px;
+  height: 9px;
+  background-color: var(--gold);
+  border-radius: 40%;
+}
+
+.cursos {
+  text-transform: uppercase;
+
+  font-weight: var(--fontWeightMedium);
+  font-size: 1.25rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 35%; /* igual à largura da timeline-left */
+  width: 1px;
+  height: calc(100% - 20px); /* ou ajusta conforme necessário */
+  background-color: var(--gold);
+}
+
+.frasesfavoritas li::marker {
+  color: var(--gold);
+}
+
+.fade-azul {
+  height: 80px;
+  background: linear-gradient(to bottom, #0077cc, var(--footerBackground));
+}
