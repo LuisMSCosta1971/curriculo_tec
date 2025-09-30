@@ -56,6 +56,9 @@
   font-weight: var(--fontWeightMedium);
   font-size: 1.25rem;
 }
+.nome-mobile {
+  display: none;
+}
 
 .columnLeft .competencias {
   line-height: 1.5;
