@@ -31,6 +31,8 @@
   transition: background-color 0.3s ease;
   text-align: center;
   align-self: center; /* esta linha centraliza */
+  text-decoration: none;
+  outline: none;
 }
 
 .btn-imprimir:hover {
@@ -40,6 +42,10 @@
 .btn-imprimir i {
   font-size: 15px;
 }
+.btn-imprimir:focus {
+  outline: none;
+}
+
 .modo-wrapper {
   display: flex;
   justify-content: flex-end;
