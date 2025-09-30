@@ -74,7 +74,7 @@
       sizes="16x16"
       href="assets/images/favicon-16x16.png"
     />
-
+    <link rel="manifest" href="assets/images/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
@@ -111,9 +111,16 @@
           />
         </div>
 
-        <button class="btn-imprimir" onclick="imprimirCurriculoPDF()">
-          <i class="bx bx-printer"></i> Imprimir Currículo PDF
-        </button>
+    <a
+  href="assets/docs/CV_2025_tec_azul_2pagPT.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button class="btn-imprimir">
+    <i class="bx bx-printer"></i> Imprimir Currículo PDF
+  </button>
+</a>
+
 
         <section class="sobre_mim">
           <h2>SOBRE MIM</h2>
@@ -372,11 +379,6 @@
     </div>
 
     <script src="assets/js/main.js"></script>
-    <iframe
-      id="pdfFrame"
-      src="assets/docs/CV_2025_tec_azul_2pagPT.pdf"
-      style="display: none"
-    ></iframe>
   </body>
 
   <div class="fade-footer"></div>
