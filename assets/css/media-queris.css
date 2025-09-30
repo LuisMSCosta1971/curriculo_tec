@@ -42,6 +42,9 @@
   .columnLeft {
     flex: 1;
     max-width: 30%;
+    .contact-float {
+      display: none;
+    }
   }
 
   .columnRight {
@@ -83,8 +86,6 @@
     text-align: center;
     gap: 6px;
   }
-
-
 
   .footer-logo {
     margin-bottom: 3px;
