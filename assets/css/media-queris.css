@@ -36,6 +36,28 @@
     transform: translateX(-50%);
   }
 }
+
+/* Colunas lado a lado em desktop */
+@media (min-width: 768px) {
+  .columnLeft {
+    flex: 1;
+    max-width: 30%;
+  }
+
+  .columnRight {
+    flex: 2;
+    max-width: 70%;
+  }
+}
+
+/* Colunas empilhadas em mobile */
+@media (max-width: 767px) {
+  .columnLeft,
+  .columnRight {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
 @media (max-width: 600px) {
   .footer-content {
     justify-content: center;
