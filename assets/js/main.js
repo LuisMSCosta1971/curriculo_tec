@@ -28,7 +28,6 @@ function setTheme(theme) {
   }
 }
 
-
 function toggleDarkMode() {
   const html = document.querySelector("html");
   const dataTheme = html.getAttribute("data-theme");
@@ -36,16 +35,6 @@ function toggleDarkMode() {
     setTheme("light");
   } else {
     setTheme("dark");
-  }
-}
-
-function imprimirCurriculoPDF() {
-  const frame = document.getElementById("pdfFrame");
-  if (frame) {
-    frame.focus();
-    frame.contentWindow.print();
-  } else {
-    alert("Não foi possível carregar o PDF.");
   }
 }
 
